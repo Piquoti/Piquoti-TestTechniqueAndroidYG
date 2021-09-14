@@ -68,7 +68,8 @@ public class myAdapter extends BaseAdapter {
         viewHolder.tvAge.setText(valueOf(contactList.get(position).getAge()));
         viewHolder.tvMail.setText(contactList.get(position).getMail());
         System.out.println(photoList.get(position));
-        
+        //viewHolder.ivPhoto.setImageBitmap(photoList.get(position));
+
 
         return layoutItem;
     }
