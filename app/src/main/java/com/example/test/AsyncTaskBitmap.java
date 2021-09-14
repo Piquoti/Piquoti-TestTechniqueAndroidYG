@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.util.ArrayList;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -23,7 +22,6 @@ public class AsyncTaskBitmap extends AsyncTask<String, Void, Bitmap> {
             InputStream input = connection.getInputStream();
             Bitmap myBitmap = BitmapFactory.decodeStream(input);
             connection.disconnect();
-            System.out.println(myBitmap);
             return myBitmap;
         } catch (IOException e) {
             e.printStackTrace();
